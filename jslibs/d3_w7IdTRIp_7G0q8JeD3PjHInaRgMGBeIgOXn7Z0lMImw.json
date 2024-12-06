@@ -1,0 +1,10 @@
+{
+  "accessor": [
+    "d3"
+  ],
+  "defs": "{\"!name\":\"LIB/d3\",\"d3\":{\"OrgChart\":{\"!type\":\"fn()\",\"prototype\":{\"initializeEnterExitUpdatePattern\":{\"!type\":\"fn()\"},\"getNodeChildren\":{\"!type\":\"fn()\"},\"initialZoom\":{\"!type\":\"fn()\"},\"render\":{\"!type\":\"fn()\"},\"addNode\":{\"!type\":\"fn()\"},\"removeNode\":{\"!type\":\"fn()\"},\"groupBy\":{\"!type\":\"fn()\"},\"calculateCompactFlexDimensions\":{\"!type\":\"fn()\"},\"calculateCompactFlexPositions\":{\"!type\":\"fn()\"},\"update\":{\"!type\":\"fn()\"},\"isEdge\":{\"!type\":\"fn()\"},\"hdiagonal\":{\"!type\":\"fn()\"},\"diagonal\":{\"!type\":\"fn()\"},\"restyleForeignObjectElements\":{\"!type\":\"fn()\"},\"onButtonClick\":{\"!type\":\"fn()\"},\"setExpansionFlagToChildren\":{\"!type\":\"fn()\"},\"expandSomeNodes\":{\"!type\":\"fn()\"},\"updateNodesState\":{\"!type\":\"fn()\"},\"setLayouts\":{\"!type\":\"fn()\"},\"collapse\":{\"!type\":\"fn()\"},\"expand\":{\"!type\":\"fn()\"},\"zoomed\":{\"!type\":\"fn()\"},\"zoomTreeBounds\":{\"!type\":\"fn()\"},\"fit\":{\"!type\":\"fn()\"},\"loadPagingNodes\":{\"!type\":\"fn()\"},\"setExpanded\":{\"!type\":\"fn()\"},\"setCentered\":{\"!type\":\"fn()\"},\"setHighlighted\":{\"!type\":\"fn()\"},\"setUpToTheRootHighlighted\":{\"!type\":\"fn()\"},\"clearHighlighting\":{\"!type\":\"fn()\"},\"fullscreen\":{\"!type\":\"fn()\"},\"zoomIn\":{\"!type\":\"fn()\"},\"zoomOut\":{\"!type\":\"fn()\"},\"toDataURL\":{\"!type\":\"fn()\"},\"exportImg\":{\"!type\":\"fn()\"},\"exportSvg\":{\"!type\":\"fn()\"},\"expandAll\":{\"!type\":\"fn()\"},\"collapseAll\":{\"!type\":\"fn()\"},\"downloadImage\":{\"!type\":\"fn()\"},\"getTextWidth\":{\"!type\":\"fn()\"},\"clear\":{\"!type\":\"fn()\"}}},\"__esModule\":{\"!type\":\"bool\"}}}",
+  "name": "d3",
+  "uidString": "d3_https://cdn.jsdelivr.net/npm/d3-org-chart@3.1.1/build/d3-org-chart.min.js",
+  "url": "https://cdn.jsdelivr.net/npm/d3-org-chart@3.1.1/build/d3-org-chart.min.js",
+  "version": "3.1.1"
+}

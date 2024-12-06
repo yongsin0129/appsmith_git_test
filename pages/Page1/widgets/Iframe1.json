@@ -1,0 +1,45 @@
+{
+  "animateLoading": true,
+  "borderOpacity": 100,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": 1,
+  "bottomRow": 107,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onMessageReceived"
+    }
+  ],
+  "flexVerticalAlignment": "start",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "yeepvhxeiw",
+  "leftColumn": 1,
+  "mobileBottomRow": 91,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 59,
+  "needsErrorInfo": false,
+  "onMessageReceived": "{{showAlert(Iframe1.message, 'info');}}",
+  "parentColumnSpace": 17.796875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 59,
+  "source": "https://www.example.com",
+  "srcDoc": "<script src=\"https://d3js.org/d3.v7.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/d3-org-chart@3\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/d3-flextree@2.1.2/build/d3-flextree.js\"></script>\n<div class=\"chart-container\"></div>\n\n<script>\n  let displayData = [\n    { customId: 1, customParentId: null, customName: 'node1' },\n    { customId: 2, customParentId: 1, customName: 'node2' }\n  ]\n\n  let chartInstance\n  renderChart(displayData)\n\n  // Event listener to receive messages from Appsmith\n  window.addEventListener('message', function (event) {\n    const receivedMessage = event.data\n    displayData = receivedMessage\n    renderChart(displayData)\n\n    window.parent.postMessage('成功將資料傳到 Iframe1 , Iframe1也成功將資料傳到 Appsmith', \"*\")\n  })\n\n  function renderChart (displayData) {\n    if (!chartInstance) {\n      chartInstance = new d3.OrgChart()\n        .nodeId((dataItem) => dataItem.customId)\n        .parentNodeId((dataItem) => dataItem.customParentId)\n        .nodeWidth((node) => 100)\n        .nodeHeight((node) => 100)\n        .nodeContent((node) => {\n          return `<div\n        style=\"background-color:aqua;width:${node.width}px;height:${node.height}px\"\n      >\n           ${node.data.customName}\n       </div>`\n        })\n        .container('.chart-container')\n    }\n\n    chartInstance.data(displayData).render()\n  }\n\n\n</script>",
+  "topRow": 58,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "lwjke09spa",
+  "widgetName": "Iframe1"
+}
